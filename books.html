@@ -1,0 +1,24 @@
+---
+layout: page
+title: Books
+permalink: /books/
+---
+<div class="home">
+
+
+  <div class="row">
+    {% for books in site.books %}
+
+        <div class="col-xs-6 col-sm-4 col-md-3">
+        
+       <a class="post-link" href="{{ books.url | prepend: site.baseurl }}">
+       	<img src="{{ books.thumbnail }}" style="height: 220px" align="center" />
+       </a>
+			
+         <h4> <a class="post-link" href="{{ books.url | prepend: site.baseurl }}">{{ books.title }}</a></h4>
+        </div>
+    {% endfor %}
+  </div>
+
+
+</div>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% assign curator = site.data.curators[page.curator] %}
+
+<article class="book" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+
+    {{ content }}
+    
+    <h2>Books</h2>
+    
+<div class="row">
+	
+{% for books in site.books %}
+  {% if books.curator == page.curator %}
+    <div class="col-xs-6 col-sm-4">
+         <a href="{{ books.url | prepend: site.baseurl }}">
+       	<img src="{{ books.thumbnail  | prepend: site.baseurl }}" style="height: 220px" align="center" />
+       </a>
+			
+         <h4> <a class="post-link" href="{{ books.url | prepend: site.baseurl }}">{{ books.title }}</a></h4>
+
+        </div>
+      
+  {% endif %}
+{% endfor %}  
+</div>
+
+</div>
+
+</article>
