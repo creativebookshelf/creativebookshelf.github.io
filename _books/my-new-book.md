@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: book
 title:  "My new book"
 curator: matt_kevan
 author: barbara_comyns
 thumbnail: /images/whodied.jpg
 
 ---
-
-By Barbara Comyns
 
 The image of a flooded grand house with the drowned peacocks from 'the grounds' floating past is enough for me to love this book.
 
