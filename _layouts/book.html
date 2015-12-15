@@ -3,18 +3,27 @@ layout: default
 ---
 
 {% assign author = site.data.authors[page.author] %}
-{% assign curator = site.data.curators[page.curator] %}
 
 <article class="book" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta">Curated by: {{ curator.name }}</p>
-  </header>
+    </header>
 
   <div class="post-content" itemprop="articleBody">
       <p>Author: {{ author.name  }}</p>
+      {% for curators in site.curators %}
+  {% if curators.curator == page.curator %}		
+         <p>Curated by: <a class="post-link" href="{{ curators.url | prepend: site.baseurl }}">{{ curators.title }}</a></p>  
+  {% endif %}
+{% endfor %}  
     {{ content }}
   </div>
+  
+  <div class="row">
+	
+
+</div>
 
 </article>
+

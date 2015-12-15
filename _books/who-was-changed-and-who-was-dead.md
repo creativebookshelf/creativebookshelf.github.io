@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: book
 title:  "Who Was Changed And Who Was Dead (VMC)"
 curator: liberty_rowley
 author: barbara_comyns

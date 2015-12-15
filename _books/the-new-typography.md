@@ -1,7 +1,7 @@
 ---
 layout: book
 title:  "The New Typography"
-curator: matt_kevan
+curator: "matt_kevan, liberty_rowley"
 author: jan_tschichold
 thumbnail: /images/typo.jpg
 
