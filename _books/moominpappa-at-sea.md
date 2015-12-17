@@ -2,7 +2,9 @@
 layout: book
 title:  "Moominpappa at Sea (Moomintroll)"
 categories: jekyll update
-curator: liberty_rowley
+curator: 
+ - matt_kevan
+ - liberty_rowley
 author: tove_jansson
 thumbnail: /images/moomin.jpg
 ---
