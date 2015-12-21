@@ -3,7 +3,7 @@ layout: book
 title:  "The Phantom Tollbooth"
 curator: matt_kevan
 author: jan_tschichold
-thumbnail: /images/typo.jpg
+thumbnail: /images/tollbooth.jpg
 
 ---
 ## Heading
